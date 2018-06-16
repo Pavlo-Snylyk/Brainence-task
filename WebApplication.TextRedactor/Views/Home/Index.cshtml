@@ -1,0 +1,73 @@
+﻿@using WebApplication.TextRedactor.Models;
+
+@model MainModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    string message = TempData["Message"] as string;
+    if (message != null)
+    {
+        <div class="row">
+            <div class="alert-success col-md-4">
+                <p>
+                    <div>@message</div>
+                </p>
+            </div>
+        </div>
+    }
+}
+
+
+@using (Html.BeginForm("Save", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Saving text</h2>
+            <div class="editor-field">
+            @Html.Label("Please choose the file", new { @style = "display:inline-block" })
+            @Html.EditorFor(x => x.InputText, new { htmlAttributes = new { placeholder = "Please enter your text",
+            required = "required", @class = "form-control" } })
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    @Html.TextBoxFor(m => m.File, new { type = "file", @class = "btn btn-default btn-file" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <input class="btn btn-primary btn-large" type="submit" value="Save Sentence" id="btnSubmit" />
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-10">
+            <div><h3>Displaying saved sentences</h3><br /></div>
+            <table class="table table-bordered table-responsive table-hover">
+                <tr>
+                    <th>Sentence</th>
+                    <th>Created at</th>
+                    <th>Created by</th>
+                    <th>Search Word</th>
+                </tr>
+                @foreach (var sentence in Model.SavedSentences)
+                {
+                    <tr>
+                        <td>@sentence.Text</td>
+                        <td>@sentence.CreatedAt</td>
+                        <td>@sentence.CreatedBy</td>
+                        <td>@(sentence.SearchWord==null ? "-" : sentence.SearchWord)</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    @Html.ActionLink("Delete Records", "DeleteAllRecords", "Home", null, new { @class = "btn btn-primary btn-large" })
+}

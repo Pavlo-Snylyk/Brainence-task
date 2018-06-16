@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SentencesStoreContainer" CdmEntityContainer="SentencesContainer">
+    <EntitySetMapping Name="SentencesSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Sentences.Sentences)">
+        <MappingFragment StoreEntitySet="SentencesSet">
+          <ScalarProperty Name="SearchWord" ColumnName="SearchWord" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

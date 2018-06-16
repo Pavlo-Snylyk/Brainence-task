@@ -1,0 +1,12 @@
+c:\users\orest.pashkevych\source\repos\WebApplication\WebApplication.Core\bin\Debug\WebApplication.Core.dll
+c:\users\orest.pashkevych\source\repos\WebApplication\WebApplication.Core\bin\Debug\WebApplication.Core.pdb
+c:\users\orest.pashkevych\source\repos\WebApplication\WebApplication.Core\obj\Debug\WebApplication.Core.csprojResolveAssemblyReference.cache
+c:\users\orest.pashkevych\source\repos\WebApplication\WebApplication.Core\obj\Debug\WebApplication.Core.csproj.CoreCompileInputs.cache
+c:\users\orest.pashkevych\source\repos\WebApplication\WebApplication.Core\obj\Debug\WebApplication.Core.dll
+c:\users\orest.pashkevych\source\repos\WebApplication\WebApplication.Core\obj\Debug\WebApplication.Core.pdb
+C:\Users\Ora\Desktop\WebApplication\WebApplication\WebApplication.Core\bin\Debug\WebApplication.Core.dll
+C:\Users\Ora\Desktop\WebApplication\WebApplication\WebApplication.Core\bin\Debug\WebApplication.Core.pdb
+C:\Users\Ora\Desktop\WebApplication\WebApplication\WebApplication.Core\obj\Debug\WebApplication.Core.csprojResolveAssemblyReference.cache
+C:\Users\Ora\Desktop\WebApplication\WebApplication\WebApplication.Core\obj\Debug\WebApplication.Core.csproj.CoreCompileInputs.cache
+C:\Users\Ora\Desktop\WebApplication\WebApplication\WebApplication.Core\obj\Debug\WebApplication.Core.dll
+C:\Users\Ora\Desktop\WebApplication\WebApplication\WebApplication.Core\obj\Debug\WebApplication.Core.pdb
